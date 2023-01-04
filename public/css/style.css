@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'germainia';
+    src: url('/font/GermaniaOne-Regular.ttf');
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body,html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Open Sans',sans-serif;
+    background-color: #000;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu-bar{
+    position: absolute;
+    z-index: 5;
+    left: 2.3vw;
+    top: 6vw;
+}
+
+.menu-bar ul{
+    list-style: none;
+    padding: 1vw 1.3vw;
+    background: rgba(58, 58, 58, 0.54);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.menu-bar ul li{
+    margin-bottom: 3.2vw;
+}
+
+.menu-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+    padding: 0.4vw 0.5vw;
+}
+
+.menu-bar ul li hr{
+    margin: 0;
+    margin-left: 0.4vw;
+    width: 1.3vw;
+}
+
+.menu-bar .below_line{
+    padding-left: 0.2vw;
+}
+
+.menu-bar ul li .active{
+    background-color: rgba(0,0,0,47);
+    border-radius: 50%;
+}
+
+
+.top .title-bar{
+    position: absolute;
+    z-index: 2;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin : 1rem 0;
+    left: 22vw;
+}
+
+.title-bar p{
+    font-family: 'germainia',sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5vw;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.title-bar .user{
+    max-width: 15%;
+    display: flex;
+    margin-left: 31vw;
+}
+
+.title-bar .user .user-profile{
+    margin-left: 0.5vw;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 6;
+}
+
+.title-bar .user .user-profile img{
+    max-width: 82%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.title-bar .user-details{
+    min-width: 75%;
+    color: #fff;
+    font-size: 1.1vw;
+    text-align: right;
+}
+
+.title-bar .user-settings{
+    color: #fff;
+    position: absolute;
+    z-index: 5;
+    top: -1.05vw;
+    left: 58vw;
+    opacity: 0;
+}
+
+.title-bar .user-settings ul{
+    list-style: none;
+    display: flex;
+    padding: 0.7vw 1.5vw;
+    background: #0000006b;
+    border-radius: 5px;
+}
+
+.title-bar .user-settings ul li{
+    margin-right: 0.8vw;
+}
+
+.current-matches .match-1 .background img{
+    max-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.current-matches .item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.945));
+    z-index: 1.5;
+}
+
+.owl-nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw;
+    font-size: 2vw;
+    position: relative;
+    top: -36vw;
+}
+
+.details{
+    position: absolute;
+    left: 16vw;
+    top: 13vw;
+    color: #fff;
+    z-index: 3;
+}
+
+.details .teams h1{
+    font-weight: 800;
+    font-size: 4.2vw;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.competetion h3{
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.competetion::before{
+    content: '';
+    position: absolute;
+    height: 10vw;
+    width: 32vw;
+    z-index: -1;
+    top: 11vw;
+    left: -2vw;
+    background: rgba(0, 0, 0, 0.526);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.other-details{
+    display: flex;
+}
+
+.other-details .type{
+    text-align: center;
+}
+
+.other-details p{
+    border-radius: 3px;
+    width: 2.5vw;
+    margin : 0;
+}
+
+.other-details i{
+    margin: 0.5vw 0.7vw;
+    font-size: 0.5vw;
+}
+
+.other-details span{
+    font-weight: 300;
+}
+
+.controls{
+    margin-top: 1.4vw;
+}
+
+.controls button{
+    cursor: pointer;
+}
+
+.controls .watch-now{
+    padding: 1vw 2vw;
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    background: #fff;
+    border : none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 300;
+    box-shadow: 1px 1px 16px 6px #05050566;
+}
+
+.controls .reminder, .controls .share{
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.controls .reminder{
+    margin: 0.5vw 1vw;
+}
+
+.major-comps{
+    max-width: 100%;
+    padding: 0vw 2vw; 
+    margin-top: -5vw;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+
+.major-comps .item{
+    transition: 0.5s;
+}
+
+.major-comps .item .wrapper{
+    transition: opacity 0.3s;
+}
+
+/* For expanded items, when hovered */
+.major-comps .item-active{
+    width: 44%;
+    position: relative;
+    padding: 1px 1px;
+    overflow: hidden;
+    height: 23.8vw;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    border-radius: 2%;
+}
+
+.major-comps .item-active .comp_image{
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+
+
+.major-comps .item-active .symbol{
+    position: absolute;
+    top: 16.4vw;
+    left: 1.6vw;
+    color: #fff;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.major-comps .item-active .symbol img{
+    max-width: 14%;
+    background: #fff;
+    border-radius: 64%;
+}
+
+.major-comps .item-active .symbol .comp_details{
+    position: relative;
+    left: 6.5vw;
+    top: -6vw;
+}
+
+.major-comps .item-active .symbol .comp_name{
+    font-size: 2vw;
+}
+
+.major-comps .item-active .symbol .comp_type{
+    font-weight: 300;
+    font-size: 1.3vw;
+}
+
+.major-comps .item-active .collapse-view{
+    opacity: 0;
+}
+
+/* For collapsed items */
+.major-comps .item-collapse{
+    width: 7%;
+    overflow: hidden;
+    position: relative;
+    padding: 1px 1px;
+    height: 23.8vw;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-top-left-radius: 30vw;
+    border-top-right-radius: 30vw;
+    border-bottom-left-radius: 8vw;
+    border-bottom-right-radius: 8vw;
+}
+
+
+.major-comps .item-collapse .competetion-content{
+    opacity: 0;
+}
+
+.major-comps .item-collapse .comp_image{
+    border-radius: 2%;
+    width: 42vw;
+}
+
+.major-comps .item-collapse .collapse-view{
+    position: absolute;
+    top: 17.2vw;
+    left: 0vw;
+    max-width: 100%;
+    transform: rotateZ(-90deg);
+    display: flex;
+}
+
+.major-comps .item-collapse .collapse-view img{
+    max-width: 5vw;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: rotateZ(90deg);
+}
+
+.major-comps .item-collapse .collapse-view .info{
+    width: 16vw;
+    color: #fff;
+    font-size: 1.35vw;
+    margin-right: 1vw;
+    margin-top: 1.3vw;
+    text-align: right;
+}
+
+.major-comps .item-collapse .collapse-view{
+    opacity: 1;
+}
+
+/* for both */
+.major-comps .item-active::before, .major-comps .item-collapse::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom,#0000,rgba(0, 0, 0, 0.755));
+    width: 100%;
+    height: 100%;
+}

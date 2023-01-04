@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <%- include('./partials/header') %> 
+
+    <body>
+        <%- include('./partials/menu-bar') %> 
+
+        <div class="top">
+
+            <%- include('./partials/title-bar') %> 
+
+            <div class="current-matches owl-carousel owl-theme">
+                <% var i = 0; %> 
+                <% items.forEach((item)=>{ %> 
+                    
+                    <div class="item match-<%= i %> ">
+
+                        <div class="background">
+                            <img src="<%= item.src %> " alt="">
+                        </div>
+                        
+                        <div class="details">
+                            <div class="teams">
+                                <h1 style="margin-bottom: -1.8vw;"><%= item.home %></h1>
+
+                                <h1 style="margin-bottom: -1.8vw;">vs</h1>
+
+                                <h1><%= item.away %> </h1>
+                            </div>
+                            
+                            <div class="competetion">
+                                <h3><%= item.comp %> </h3>
+                            </div>
+
+                            <div class="other-details">
+                                <div class="type">
+                                    <% if(item.type.toLowerCase() == 'live'){ %>
+                                        <p style="color: #DB0007; border: 1px solid #DB0007;">L</p>
+                                    <% }else if(item.type.toLowerCase() == 'replay'){ %> 
+                                        <p style="color: #50ff11; border: 1px solid #50ff11;">R</p>
+                                    <% }else{ %>
+                                        <p style="color: #00F0FF; border: 1px solid #00F0FF;">S</p>
+                                    <% } %>  
+                                </div>
+
+                                <i class="fa-solid fa-circle"></i>
+
+                                <div class="date">
+                                    <span><%= item.date %></span> 
+                                </div>
+
+                                <i class="fa-solid fa-circle"></i>
+
+                                <div class="time">
+                                    <span><%= item.time %></span> 
+                                </div>
+
+
+                            </div>
+
+                            <div class="controls">
+                                <button class="watch-now"><i class="fa-solid fa-circle-play"></i> <span> Watch Now</span></button>
+
+                                <button class="reminder"><i class="fa-regular fa-bell" id="reminder"></i></button>
+
+                                <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
+                            </div>
+
+
+                        </div>
+
+                        
+                    </div>
+                    <% i++ %> 
+    
+                <% }); %>  
+            </div>
+
+        </div>
+
+        <div class="major-comps">
+            <div class="item item-active" style="background: url('/images/competetion images/IPL.jpg');">
+                <div class="wrapper">
+                    <div class="competetion-content">
+                        <div class="symbol">
+                            <img src="/images/comp-logos/ipl.png" alt="">
+                            <div class="comp_details">
+                                <span class="comp_name">Indian Premier League</span><br>
+                                <span class="comp_type">Cricket</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="collapse-view">
+                        <div class="comp_details" style="display: flex;">
+                            <span class="info">Indian Premier League</span>
+                            <img src="/images/comp-logos/ipl.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="item item-collapse" style="background: url('/images/competetion images/EPL.jpg');">
+                <div class="wrapper">
+                    <div class="competetion-content">
+                        <div class="symbol">
+                            <img src="/images/comp-logos/PL.png" alt="">
+                            <div class="comp_details">
+                                <span class="comp_name">English Premier League</span><br>
+                                <span class="comp_type">Football</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="collapse-view">
+                        <div class="comp_details" style="display: flex;">
+                            <span class="info">English Premier League</span>
+                            <img src="/images/comp-logos/PL.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="item item-collapse" style="background: url('/images/competetion images/UCL.jpg');">
+                <div class="wrapper">
+                    <div class="competetion-content">
+                        <div class="symbol">
+                            <img src="/images/comp-logos/ucl.png" alt="">
+                            <div class="comp_details">
+                                <span class="comp_name">UEFA Champions League</span><br>
+                                <span class="comp_type">Football</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="collapse-view">
+                        <div class="comp_details" style="display: flex;">
+                            <span class="info">UEFA Champions League</span>
+                            <img src="/images/comp-logos/ucl.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="item item-collapse" style="background: url('/images/competetion images/olympics.jpg');">
+                <div class="wrapper">
+                    <div class="competetion-content">
+                        <div class="symbol">
+                            <img src="/images/comp-logos/olympics.png" alt="">
+                            <div class="comp_details">
+                                <span class="comp_name">Olympics 2024</span><br>
+                                <span class="comp_type">All Sports</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="collapse-view">
+                        <div class="comp_details" style="display: flex;">
+                            <span class="info">Olympics 2024</span>
+                            <img src="/images/comp-logos/olympics.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="item item-collapse" style="background: url('/images/competetion images/AEW.jpg');">
+                <div class="wrapper">
+                    <div class="competetion-content">
+                        <div class="symbol">
+                            <img src="/images/comp-logos/AEW.png" alt="">
+                            <div class="comp_details">
+                                <span class="comp_name">All Elite Wresting</span><br>
+                                <span class="comp_type">Wresting</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="collapse-view">
+                        <div class="comp_details" style="display: flex;">
+                            <span class="info">All Elite Wrestling</span>
+                            <img src="/images/comp-logos/AEW.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="item item-collapse" style="background: url('/images/competetion images/WC.jpg');">
+                <div class="wrapper">
+                    <div class="competetion-content">
+                        <div class="symbol">
+                            <img src="/images/comp-logos/Fifa_2022.png" alt="">
+                            <div class="comp_details">
+                                <span class="comp_name">FIFA World Cup 2022</span><br>
+                                <span class="comp_type">Football</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="collapse-view">
+                        <div class="comp_details" style="display: flex;">
+                            <span class="info">FIFA World Cup 2022</span>
+                            <img src="/images/comp-logos/Fifa_2022.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="item item-collapse" style="background: url('/images/competetion images/F1.jpg');">
+                <div class="wrapper">
+                    <div class="competetion-content">
+                        <div class="symbol">
+                            <img src="/images/comp-logos/f1.png" alt="">
+                            <div class="comp_details">
+                                <span class="comp_name">Formula 1</span><br>
+                                <span class="comp_type">Motor Sport</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="collapse-view">
+                        <div class="comp_details" style="display: flex;">
+                            <span class="info">Formula 1</span>
+                            <img src="/images/comp-logos/f1.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+        
+
+
+        
+
+        <%- include('./partials/footer') %> 
+        <script>
+            document.querySelectorAll('.menu-bar a').forEach((item)=>{
+                if(item.dataset.name == 'home'){
+                    item.classList.add('active');
+                }
+            });
+
+            var allItems = document.querySelectorAll('.major-comps .item');
+            var allWrapper = document.querySelectorAll('.major-comps .item .wrapper')
+
+            allItems.forEach((item)=>{
+                
+                item.addEventListener('click',()=>{
+                    item.childNodes[1].style.opacity = '0';
+                    setTimeout(()=>{
+                        item.childNodes[1].style.opacity = '1';
+                    },200);
+                    if(item.className != 'item item-active'){
+                        changeAllClass();
+                        item.className = 'item item-active'
+                    }
+                    
+                });
+            });
+
+            function changeAllClass(){
+                
+
+                allItems.forEach((item)=>{
+                    if(item.className == 'item item-active'){
+                        item.childNodes[1].style.opacity = '0';
+                        setTimeout(()=>{
+                            item.childNodes[1].style.opacity = '1';
+                        },200);
+                    }
+                    item.className = 'item item-collapse'
+                });
+            }
+
+        </script>
+    </body>
+</html>

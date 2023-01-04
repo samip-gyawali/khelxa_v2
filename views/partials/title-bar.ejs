@@ -1,0 +1,23 @@
+<div class="title-bar">
+    <div class="khelxa">
+        <p>khelxa</p>
+    </div>
+
+    <div class="user">
+        <div class="user-settings">
+            <ul>
+                <li>Account</li>
+                <li>My List</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        
+        <div class="user-details">
+            <span class="name" style="font-weight: 600;"><%= user.name %> </span><br>
+            <span class="membership" style="font-weight: 300; font-size: 0.8vw; position: relative; top: -0.3vw;"><%= user.subType.toUpperCase() %> </span>
+        </div>
+        <div class="user-profile">
+            <img src="<%= user.src %> " alt="">
+        </div>
+    </div>
+</div>
