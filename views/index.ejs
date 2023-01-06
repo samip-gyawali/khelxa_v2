@@ -366,16 +366,17 @@
             </div>
         </div>
 
-        
-
-        <%- include('./partials/footer') %> 
-        <script>
+        <!-- Script to be loaded before script.js file -->
+        <script> 
             document.querySelectorAll('.menu-bar a').forEach((item)=>{
                 if(item.dataset.name == 'home'){
                     item.classList.add('active');
                 }
             });
-
+        </script>
+        
+        <%- include('./partials/footer') %> 
+        <script>
             var allItems = document.querySelectorAll('.major-comps .item');
             var allWrapper = document.querySelectorAll('.major-comps .item .wrapper')
 
