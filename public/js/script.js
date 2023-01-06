@@ -9,6 +9,17 @@ reminderButtons.forEach((button)=>{
     });
 });
 
+
+// Responsive design user-settings
+var screenSize = window.visualViewport.width;
+var translateX = 0;
+if(screenSize >=1300 && screenSize <= 1440){
+    translateX = -0.5
+}else if(screenSize <=1300 ){
+    translateX = -2
+}
+
+
 anime({
     targets : '.user .user-settings',
     translateX : '5vw',
@@ -27,7 +38,7 @@ userProfile.addEventListener('click',()=>{
 
         anime({
             targets : '.user .user-settings',
-            translateX : '0vw',
+            translateX : `${translateX}vw`,
             opacity : 1,
             duration : 1200,
             easing: 'easeInOutExpo'

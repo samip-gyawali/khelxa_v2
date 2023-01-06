@@ -28,7 +28,7 @@ body,html{
 
 .menu-bar ul{
     list-style: none;
-    padding: 1vw 1.3vw;
+    padding: 1vw 0.6vw;
     background: rgba(58, 58, 58, 0.54);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -492,4 +492,27 @@ body,html{
 
 .list-carousel .user .content .competetion{
     color: rgba(255, 255, 255, 0.853);
+}
+
+
+
+
+
+
+/* Responsive page */
+
+/* Laptop screens */
+
+/* Laptop with HiDPI screen */
+@media only screen and (min-width: 1401px) and (max-width: 1500px){
+    .title-bar .user-settings{
+        top: -1.15vw;
+    }
+}
+
+/* Laptop with MDPI screen */
+@media only screen and (min-width: 1200px) and (max-width: 1400px){
+    .title-bar .user-settings{
+        top: -1.3vw;
+    }
 }
