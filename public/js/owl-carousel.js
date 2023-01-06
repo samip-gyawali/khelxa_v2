@@ -29,7 +29,7 @@ if(window.visualViewport.width < 1200 && window.visualViewport.width >= 600){
     margin = 250;
 }
 
-$('.user-list .user').owlCarousel({
+$('.list-carousel .user').owlCarousel({
     loop:true,
     margin:margin,
     nav:false,
