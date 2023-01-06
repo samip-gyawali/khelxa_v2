@@ -402,7 +402,6 @@ body,html{
     margin-top: 3vw;
     padding: 0vw 3vw;
     color: #fff;
-    margin-bottom: 5vw;
 }
 
 .list-carousel .user{
@@ -500,9 +499,30 @@ body,html{
 }
 
 
+/* originals */
+.originals{
+    display: flex;
+    margin: 2vw 3vw;
+    max-width: 100%;
+    justify-content: space-between;
+}
 
+.originals .i1{
+    background: url('/images/originals/UFC.png');
+}
 
+.originals .i2{
+    background: url('/images/originals/where_next.png');
+}
 
+.originals .item{
+    width: 49.5%;
+    height: 14vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3%;
+}
 
 /* Responsive page */
 
