@@ -468,7 +468,29 @@ body,html{
     background: url('/images/live-images/barVmun.jpeg');
 }
 
+.ucl .user .i1 .image-container{
+    background: url('/images/ucl/livVrma.jpg');
+}
 
+.ucl .user .i2 .image-container{
+    background: url('/images/ucl/mciVrma.jpg');
+}
+
+.ucl .user .i3 .image-container{
+    background: url('/images/ucl/livVvil.jpg');
+}
+
+.ucl .user .i4 .image-container{
+    background: url('/images/ucl/vilVbay.jpg');
+}
+
+.ucl .user .i5 .image-container{
+    background: url('/images/ucl/psgVbay.jpg');
+}
+
+.ucl .user .i6 .image-container{
+    background: url('/images/ucl/dorVche.jpg');
+}
 
 
 /* For all items */
