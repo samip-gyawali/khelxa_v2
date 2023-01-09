@@ -16,7 +16,7 @@ var translateX = 0;
 if(screenSize >=1300 && screenSize <= 1440){
     translateX = -0.5
 }else if(screenSize <=1300 ){
-    translateX = -2
+    translateX = -2.6
 }
 
 
@@ -102,39 +102,39 @@ document.querySelectorAll('.menu-bar a').forEach((item)=>{
         pageName = item.dataset.name;
         switch(pageName){
             case 'home':
-                hoverEffectPositionY = 6.25;
+                hoverEffectPositionY = 6;
                 hoverEffectPositionX = 0.55;
                 break;
             
             case 'sports':
-                hoverEffectPositionY = 10.8;
+                hoverEffectPositionY = 10.45;
                 hoverEffectPositionX = 0.5;
                 break;
             
             case 'games':
-                hoverEffectPositionY = 15.5;
+                hoverEffectPositionY = 14.9;
                 hoverEffectPositionX = 0.58;
                 break;
             
             case 'khelxa':
-                hoverEffectPositionY = 20.1;
-                hoverEffectPositionX = 0.58;
+                hoverEffectPositionY = 19.3;
+                hoverEffectPositionX = 0.55;
                 break;
             
             case 'shop':
-                hoverEffectPositionY = 25.6;
+                hoverEffectPositionY = 24.6;
                 hoverEffectPositionX = 0.6;
                 break;
             
             case 'bookmark':
-                hoverEffectPositionY = 29;
+                hoverEffectPositionY = 27.8;
                 hoverEffectPositionX = 0.55;
                 break;
-
+    
         }
 
-        document.querySelectorAll('.menu-bar .menu-hover')[0].style.top = `${hoverEffectPositionY}vw`;
-        document.querySelectorAll('.menu-bar .menu-hover')[0].style.left = `${hoverEffectPositionX}vw`;
+        document.querySelectorAll('.menu-bar .menu-hover')[0].style.top = `${hoverEffectPositionY}em`;
+        document.querySelectorAll('.menu-bar .menu-hover')[0].style.left = `${hoverEffectPositionX}em`;
     }
 
     item.addEventListener('mouseover',()=>{
@@ -155,39 +155,39 @@ function changeHoverer(item){ // when different item hovered over, change the po
     pageName = item.dataset.name;
     switch(pageName){
         case 'home':
-            hoverEffectPositionY = 6.25;
+            hoverEffectPositionY = 6;
             hoverEffectPositionX = 0.55;
             break;
         
         case 'sports':
-            hoverEffectPositionY = 10.8;
+            hoverEffectPositionY = 10.45;
             hoverEffectPositionX = 0.5;
             break;
         
         case 'games':
-            hoverEffectPositionY = 15.5;
+            hoverEffectPositionY = 14.9;
             hoverEffectPositionX = 0.58;
             break;
         
         case 'khelxa':
-            hoverEffectPositionY = 20.1;
-            hoverEffectPositionX = 0.58;
+            hoverEffectPositionY = 19.3;
+            hoverEffectPositionX = 0.55;
             break;
         
         case 'shop':
-            hoverEffectPositionY = 25.6;
+            hoverEffectPositionY = 24.6;
             hoverEffectPositionX = 0.6;
             break;
         
         case 'bookmark':
-            hoverEffectPositionY = 29;
+            hoverEffectPositionY = 27.8;
             hoverEffectPositionX = 0.55;
             break;
 
     }
 
-    document.querySelectorAll('.menu-bar .menu-hover')[0].style.top = `${hoverEffectPositionY}vw`;
-    document.querySelectorAll('.menu-bar .menu-hover')[0].style.left = `${hoverEffectPositionX}vw`;
+    document.querySelectorAll('.menu-bar .menu-hover')[0].style.top = `${hoverEffectPositionY}em`;
+    document.querySelectorAll('.menu-bar .menu-hover')[0].style.left = `${hoverEffectPositionX}em`;
 }
 
 
@@ -197,39 +197,39 @@ function repositionHoverer(){
             pageName = item.dataset.name;
             switch(pageName){
                 case 'home':
-                    hoverEffectPositionY = 6.25;
+                    hoverEffectPositionY = 6;
                     hoverEffectPositionX = 0.55;
                     break;
                 
                 case 'sports':
-                    hoverEffectPositionY = 10.8;
+                    hoverEffectPositionY = 10.45;
                     hoverEffectPositionX = 0.5;
                     break;
                 
                 case 'games':
-                    hoverEffectPositionY = 15.5;
+                    hoverEffectPositionY = 14.9;
                     hoverEffectPositionX = 0.58;
                     break;
                 
                 case 'khelxa':
-                    hoverEffectPositionY = 20.1;
-                    hoverEffectPositionX = 0.58;
+                    hoverEffectPositionY = 19.3;
+                    hoverEffectPositionX = 0.55;
                     break;
                 
                 case 'shop':
-                    hoverEffectPositionY = 25.6;
+                    hoverEffectPositionY = 24.6;
                     hoverEffectPositionX = 0.6;
                     break;
                 
                 case 'bookmark':
-                    hoverEffectPositionY = 29;
+                    hoverEffectPositionY = 27.8;
                     hoverEffectPositionX = 0.55;
                     break;
     
             }
     
-            document.querySelectorAll('.menu-bar .menu-hover')[0].style.top = `${hoverEffectPositionY}vw`;
-            document.querySelectorAll('.menu-bar .menu-hover')[0].style.left = `${hoverEffectPositionX}vw`;
+            document.querySelectorAll('.menu-bar .menu-hover')[0].style.top = `${hoverEffectPositionY}em`;
+            document.querySelectorAll('.menu-bar .menu-hover')[0].style.left = `${hoverEffectPositionX}em`;
         }
     
 });
