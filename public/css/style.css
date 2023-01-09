@@ -546,6 +546,50 @@ body,html{
     border-radius: 3%;
 }
 
+.competetions{
+    color: #fff;
+    margin-top: 3vw;
+    padding: 0vw 3vw;
+    margin-bottom: 3vw;
+}
+
+.competetions .item-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.competetions .item-wrapper .i1{
+    background: url('/images/football_leagues/EPL.jpg');
+}
+
+.competetions .item-wrapper .i2{
+    background: url('/images/football_leagues/bundesliga.png');
+}
+
+.competetions .item-wrapper .i3{
+    background: url('/images/football_leagues/uel.webp');
+}
+
+.competetions .item-wrapper .i4{
+    background: url('/images/football_leagues/mls.png');
+}
+
+.competetions .item-wrapper .i5{
+    background: url('/images/football_leagues/ucl.jpg');
+}
+
+.competetions .item-wrapper .item{
+    padding: 0.1vw;
+    width: 17vw;
+    height: 9.8vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5%;
+}
+
 /* Responsive page */
 
 /* Laptop screens */
